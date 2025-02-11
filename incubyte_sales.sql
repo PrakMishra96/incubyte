@@ -145,6 +145,11 @@ SELECT SUM(TransactionAmount) AS TotalSales
 FROM salesdata;
 -- Total sales amounted to Rs 10,202,662,960.19
 
+-- Average Transaction Amount 
+SELECT AVG(TransactionAmount) AS AvgTransactionAmount
+FROM salesdata;
+-- 20,405.32
+
 -- Top 10 customers by total overall sales
 SELECT CustomerID, SUM(TransactionAmount) as TotalTransactionAmount
 FROM salesdata
@@ -250,12 +255,6 @@ Online		5,078,048,214.51
 NULL		   45,733,242.94
 */
 
--- Average Transaction Amount 
-SELECT AVG(TransactionAmount) AS AvgTransactionAmount
-FROM salesdata;
--- 2,0405.32
-
-
 -- Sales by Product 
 SELECT ProductName, SUM(TransactionAmount) AS SalesByProduct
 FROM salesdata
@@ -270,7 +269,7 @@ T-Shirt		  102,306,079.47
 NULL		   45,733,242.94
 Notebook	   24,079,586.12
 Apple		   22,300,717.86
-*/
+*/	
 
 -- Sales by Customer Age Group
 SELECT 
@@ -351,3 +350,21 @@ From here, it can be deduced that the discount range that earned the most revenu
 SELECT IsPromotional, COUNT(IsPromotional) AS TotalTransaction, SUM(TransactionAmount) AS Revenue, ROUND(SUM(TransactionAmount)/COUNT(IsPromotional), 2) AS AverageTransactionAmount
 FROM salesdata
 GROUP BY IsPromotional;
+
+/*
+IsPromotional	TotalTransaction	Revenue				AverageTransactionAmount
+No				250,685				5,103,816,281.93	20,359.48
+Yes				249,315				5,098,846,678.26	20,451.42
+*/
+
+-- Sales by Month
+SELECT 
+    DATE_FORMAT(TransactionDate, '%m') AS Month,
+    SUM(TransactionAmount) AS TotalTransactionAmount,
+    COUNT(TransactionAmount) AS TotalTransactions,
+    ROUND(SUM(TransactionAmount)/COUNT(TransactionAmount), 2) AS AverageTransaction
+FROM salesdata
+GROUP BY Month
+ORDER BY TotalTransactionAmount DESC;
+
+SELECT MAX(TransactionDate) FROM salesdata;
