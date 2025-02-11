@@ -6,3 +6,4 @@ Data Formatting:
 2) Substituting the empty cells for "NULL" for MySQL to treat them as NULL values.
 3) Formating the datetime to '%Y-%m-%d %H:%M:%S'
 
+Importing Data: The dataset now split into 5 parts is imported using "LOAD DATA LOCAL INFILE". After each load, check no. of records in the table using "SELECT COUNT(1)"
