@@ -130,11 +130,11 @@ FROM salesdata;
 | CustomerID		| 50,000	|
 | TransactionDate	| 50,000	|
 | PaymentMethod		| 50,000	|
-| StoreType			| 50,000	|
+| StoreType		| 50,000	|
 | CustomerAge		| 50,000	|
 | CustomerGender	| 50,000	|
 | ProductName		| 50,000	|
-| Region			| 42,633	|
+| Region		| 42,633	|
 ---------------------------------
 */
 
