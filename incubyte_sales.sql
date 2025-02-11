@@ -3,7 +3,7 @@ CREATE DATABASE incubyte;
 SHOW DATABASES;
 USE incubyte;
 SHOW TABLES;
-
+describe salesdata;
 -- Creating the table to import salesdata dataset into
 CREATE TABLE IF NOT EXISTS salesdata (
     TransactionID INT,
