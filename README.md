@@ -37,17 +37,17 @@ The NULL vales are as follows: TransactionID, TransactionAmount, Quantity, Disco
 
 ProductName	SalesByProduct		TotalTransactions	TotalProducts
 
-Laptop		6,231,220,430.24	89,809				   89,809
+Laptop		|6,231,220,430.24	|89,809			|   89,809
 
-Sofa		3,777,022,903.56	89,740				   89,740
+Sofa		|3,777,022,903.56	|89,740			|   89,740
 
-T-Shirt		  102,306,079.47	90,187				  270,545
+T-Shirt		|  102,306,079.47	|90,187			|  270,545
 
-NULL		   45,733,242.94	50,000				  502,299
+NULL		|   45,733,242.94	|50,000			|  502,299
 
-Notebook	   24,079,586.12	90,294				  498,649
+Notebook	|   24,079,586.12	|90,294			|  498,649
 
-Apple		   22,300,717.86	89,970				2,296,713
+Apple		|   22,300,717.86	|89,970			|2,296,713
 
 	 e.Total Customers - 48,994
 
