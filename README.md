@@ -67,17 +67,31 @@ c.No of Customers with multiple same-day transactions
 -- Dedicated campaigns can be arranged for such customers to drive sales.
 
 d.Rank of each City by Totalsales For each Month
+
 TransMonth	City	    TotalSales	CityRank
-January		  Kolkata		  4159	    1
-February	  Delhi		    3738	    1
-March		    Chennai		  4077	    1
-April		    Mumbai		  4020	    1
-May			    Chennai		  4097	    1
-June		    Lucknow		  3963	    1
-July		    Lucknow		  4126	    1
-August		  Jaipur		  4139	    1
-September	  Bangalore	  3976	    1
-October		  Bangalore	  4224	    1
-November	  Kolkata		  3951	    1
-December	  Mumbai		  1775	    1
+
+January		Kolkata		  4159	    1
+
+February	Delhi		  3738	    1
+
+March		Chennai		  4077	    1
+
+April		Mumbai		  4020	    1
+
+May		Chennai		  4097	    1
+
+June		Lucknow		  3963	    1
+
+July		Lucknow		  4126	    1
+
+August		Jaipur		  4139	    1
+
+September	Bangalore	  3976	    1
+
+October		Bangalore	  4224	    1
+
+November	Kolkata		  3951	    1
+
+December	Mumbai		  1775	    1
+
 -- Here we can see that Bangalore gave the best monthly totalsales number in October. 
