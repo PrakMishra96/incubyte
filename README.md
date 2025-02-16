@@ -29,19 +29,32 @@ The NULL vales are as follows: TransactionID, TransactionAmount, Quantity, Disco
 Part 1: Analysing TransactionDate
 
 a)Sales, Revenue, and Units sold every Month - 
+
 TransMonth	TotalSales	TotalRevenue	  AverageRevenue	UnitsSold
-	Jan			  40098	       814518652.58	      20313.20		300531
-	Feb			  36208        744181785.06	      20552.97		272934
-	March		  40247        818874213.27	      20346.22		303822
-	April		  38941        801872066.80	      20591.97		290314
-	May			  40196        819562671.77	      20389.16		301294
-	June		  38785        790468924.13	      20380.79		293485
-	July		  40199        817029612.91	      20324.63		299704
-	August	  40267        822157143.34	      20417.64		298672
-	Sept		  38906        791350039.70	      20340.05		291839
-	Oct			  40202        815402571.54	      20282.64		302980
-	Nov			  38831        799945427.92	      20600.69		290306
-	Dec			  17120        342380997.76	      19998.89		127943
+
+	Jan	40098	       814518652.58	      20313.20		300531
+ 
+	Feb	36208        744181785.06	      20552.97		272934
+ 
+	March	40247        818874213.27	      20346.22		303822
+ 
+	April	38941        801872066.80	      20591.97		290314
+ 
+	May	40196        819562671.77	      20389.16		301294
+ 
+	June	38785        790468924.13	      20380.79		293485
+ 
+	July	40199        817029612.91	      20324.63		299704
+ 
+	August	40267        822157143.34	      20417.64		298672
+ 
+	Sept	38906        791350039.70	      20340.05		291839
+ 
+	Oct	40202        815402571.54	      20282.64		302980
+ 
+	Nov	38831        799945427.92	      20600.69		290306
+ 
+	Dec	17120        342380997.76	      19998.89		127943
 -- The month that saw the most products sold is August (40,267 items sold), August also had the top overall revenue of  822,157,143.34. 
 -- But the highest Average Revenue was in November. And most items were sold in March.
 
