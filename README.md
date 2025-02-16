@@ -26,25 +26,45 @@ The NULL vales are as follows: TransactionID, TransactionAmount, Quantity, Disco
 
 | Region           | 42,633 |
 
-Part 1: Analysing TransactionAmount or Revenue
+Part 1: Analysing TransactionDate
 
-a)Total Revenue generated throughout the year (2022) was Rs 10,202,662,960.19, and the average transaction amount is Rs 20,405.
+a)Sales, Revenue, and Units sold every Month - 
+TransMonth	TotalSales	TotalRevenue	  AverageRevenue	UnitsSold
+	Jan			  40098	       814518652.58	      20313.20		300531
+	Feb			  36208        744181785.06	      20552.97		272934
+	March		  40247        818874213.27	      20346.22		303822
+	April		  38941        801872066.80	      20591.97		290314
+	May			  40196        819562671.77	      20389.16		301294
+	June		  38785        790468924.13	      20380.79		293485
+	July		  40199        817029612.91	      20324.63		299704
+	August	  40267        822157143.34	      20417.64		298672
+	Sept		  38906        791350039.70	      20340.05		291839
+	Oct			  40202        815402571.54	      20282.64		302980
+	Nov			  38831        799945427.92	      20600.69		290306
+	Dec			  17120        342380997.76	      19998.89		127943
+-- The month that saw the most products sold is August (40,267 items sold), August also had the top overall revenue of  822,157,143.34. 
+-- But the highest Average Revenue was in November. And most items were sold in March.
 
-b)The top 10 customers have spent more than Rs 69,000 each, with the top customer spending Rs 800,724.49.
+b.Customers with only one purchase in the year - 42 customers that only bought one item in the whole year
 
-c)The bottom 5 customers have spent less than Rs 100, with two customers with negative amounts, this shows that they have possibly been refunded for a return. The most note-worthy point is that such customers were only 2, further analysis can be conducted to investigate the reason for this data, though this is not very alarming from a purely sales point of view. 
+c.No of Customers with multiple same-day transactions
+-- 649 customers that had multiple transactions on their first use.
+-- Similarly, 26,564 customers that had transactions with less than a month (30 days) apart, 
+-- and 17,301 customers had transactions between 30 days and 90 days (more than a month but less than 3 months)
+-- Dedicated campaigns can be arranged for such customers to drive sales.
 
-d)Sales by Region and City - Cities like Kolkata and Ahmedabad generated top revenues, while cities like Mumbai and Hyderabad generated the lowest revenues. This could imply low market penetration in Mumbai and Hyderabad, a potential reason could be tougher competition.
-
-e)Sales by PaymentMethod - there was an almost equal share of each type of payment method, which means no particular method was favored by the customers.
-Sales by StoreType - The customers almost equally favor both in-store and online modes.
-
-f)The top product by revenue is "Laptop", followed by "Sofa" while the lowest revenue-generating product is "Apple"
-
-g)CustomerAge analysis shows that the most revenue-generating age range is "46-60", all genders are almost equal in the share of revenue generated.
-
-h)Analysing the impact of Promotions and Discounts shows that the top percentage range was "30-40" and that Promotion had little to no impact on overall or average TransactionAmount.
-
-i)The top month by revenue was August, and the least was December (though the dataset provided only had data upto the 14th of December).
-
-
+d.Rank of each City by Totalsales For each Month
+TransMonth	City	    TotalSales	CityRank
+January		  Kolkata		  4159	    1
+February	  Delhi		    3738	    1
+March		    Chennai		  4077	    1
+April		    Mumbai		  4020	    1
+May			    Chennai		  4097	    1
+June		    Lucknow		  3963	    1
+July		    Lucknow		  4126	    1
+August		  Jaipur		  4139	    1
+September	  Bangalore	  3976	    1
+October		  Bangalore	  4224	    1
+November	  Kolkata		  3951	    1
+December	  Mumbai		  1775	    1
+-- Here we can see that Bangalore gave the best monthly totalsales number in October. 
