@@ -262,12 +262,12 @@ GROUP BY PaymentMethod
 ORDER BY RevenueByPaymentMethod DESC;
 
 /*
-PaymentMethod	RevenueByPaymentMethod
-Cash			2,556,679,197.41
-Debit Card		2,552,366,143.98
-UPI				2,530,177,440.30
-Credit Card		2,517,706,935.56
-NULL			   45,733,242.94
+PaymentMethod	RevenueByPaymentMethod		TotalSales
+Cash			2,556,679,197.41	112625
+Debit Card		2,552,366,143.98	113015
+UPI			2,530,177,440.30	112517
+Credit Card		2,517,706,935.56	111843
+NULL			   45,733,242.94	50000
 */
 
 -- 3) b.Revenue by StoreType
