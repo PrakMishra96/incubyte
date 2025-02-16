@@ -28,20 +28,148 @@ The NULL vales are as follows: TransactionID, TransactionAmount, Quantity, Disco
 
 
 1) a.Total Revenue - 10,202,662,960.19
-	 b.Average Transaction Amount - 20,405.32
-	 c.Total Products Sold - 3,747,755
-	 d.Total Sales and Revenue and Quantity by Products
-	 e.Total Customers
 
-2)a.Top 5 customers by Revenue
+	 b.Average Transaction Amount - 20,405.32
+
+	 c.Total Products Sold - 3,747,755
+
+	 d.Total Sales and Revenue and Quantity by Products
+
+ProductName	SalesByProduct		TotalTransactions	TotalProducts
+
+Laptop		6,231,220,430.24	89,809				   89,809
+
+Sofa		3,777,022,903.56	89,740				   89,740
+
+T-Shirt		  102,306,079.47	90,187				  270,545
+
+NULL		   45,733,242.94	50,000				  502,299
+
+Notebook	   24,079,586.12	90,294				  498,649
+
+Apple		   22,300,717.86	89,970				2,296,713
+
+	 e.Total Customers - 48,994
+
+2)a.Top 5 Customers by Revenue
+
+CustomerID	TotalTransactionAmount
+
+32460		800724.49
+
+39732		773331.78
+
+10494		773034.52
+
+17752		769126.59
+
+9502		763669.57
+
 	b.Bottom 5 customers by Revenue
+
+CustomerID	TotalTransactionAmount
+ 
+35462		-664.86
+
+39606		-598.96
+
+45098		 22.34
+
+32287		 64.87
+
+46086		 67.54
+
 	c.Top Cities by Revune
+ 
+City		RevenueByCity
+
+Kolkata		1,027,325,507.51
+
+Ahmedabad	1,023,675,900.25
+
+Bangalore	1,022,379,945.89
+
+Pune		1,022,136,461.28
+
+Chennai		1,022,122,710.60
+
+Delhi		1,021,352,525.15
+
+Lucknow		1,021,207,908.00
+
+Mumbai		1,018,525,530.92
+
+Jaipur		1,015,044,077.82
+
+Hyderabad	1,008,892,392.77
+
 	
-3)a.Revenue by Payment method - roughly same by all methods
+3)a.Revenue by Payment method - roughly the same by all methods
+
+PaymentMethod	SalesByPaymentMethod
+
+Cash			2,556,679,197.41
+
+Debit Card		2,552,366,143.98
+
+UPI			2,530,177,440.30
+
+Credit Card		2,517,706,935.56
+
+NULL			   45,733,242.94
+
 	b.Revenue by StoreType
-	c.Revenue by CustomerAge --- use from part2
+ 
+StoreType	RevenueByStoreType	TotalTransactions
+
+In-Store	5,078,881,502.74	224,782
+
+Online		5,078,048,214.51	225,218
+
+NULL		   45,733,242.94	 50,000
+
+	c.Revenue by CustomerAge
+
+AgeGroup	TotalCust	TotalRevenue
+
+18-25		33619		1422126799.06
+
+26-35		37463		1791131581.70
+
+36-45		37490		1780329661.52
+
+46-60		43437		2680156973.73
+
+60+		42476		2483184701.24
+
+Not Mentioned	29528		  45733242.94
+
 	d.Revenue by CustomerGender
+
+CustomerGender		SalesByGender
+
+Male			3397984626.42
+
+Other			3391554647.25
+
+Female			3367390443.58
+
+NULL			45733242.94
+
 	e.Revenue by Range of DiscountPercent
+
+DiscountRange		TotalSalesInRange
+
+40-50			2,023,000,553.23
+
+30-40			2,053,653,716.92
+
+20-30			2,041,329,345.10
+
+10-20			2,048,195,407.31
+
+0-10			2,036,483,937.63
+
 
 4)a.Top Customers by Total items baught
 	b.City with most transactions and Revenue
