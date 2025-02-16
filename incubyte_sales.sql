@@ -556,6 +556,7 @@ TotalCustomers	Revenue			Promoted
  5) a.Sales, Revenue, and Units sold every Month
 	b.Total customers with more than one transaction per month.
 	c.No of Customers with multiple same day transactions
+    d.Rank of each City by Totalsales For each Month
 
 */
 
@@ -652,7 +653,7 @@ WHERE DaysBetweenPurchases < 90 AND DaysBetweenPurchases > 30;
 -- and 17,301 custoemrs had transactions between 30 days and 90 days (more than a month but less than 3 months)
 -- Dedicated campaigns can be arranged for such customers to drive sales.
 
--- 50 d.Rank of each City by Totalsales For each Month
+-- 5) d.Rank of each City by Totalsales For each Month
 WITH MonthlySales AS (
     SELECT MONTH(TransactionDate) AS TransMonth, 
         City, 
@@ -686,3 +687,19 @@ RankedSales AS
     City, TotalSales, CityRank
 FROM RankedSales 
 WHERE CityRank <=1;
+
+/*
+TransMonth	City	TotalSales	CityRank
+January		Kolkata		4159	1
+February	Delhi		3738	1
+March		Chennai		4077	1
+April		Mumbai		4020	1
+May			Chennai		4097	1
+June		Lucknow		3963	1
+July		Lucknow		4126	1
+August		Jaipur		4139	1
+September	Bangalore	3976	1
+October		Bangalore	4224	1
+November	Kolkata		3951	1
+December	Mumbai		1775	1
+*/
