@@ -26,25 +26,33 @@ The NULL vales are as follows: TransactionID, TransactionAmount, Quantity, Disco
 
 | Region           | 42,633 |
 
-Part 1: Analysing TransactionAmount or Revenue
 
-a)Total Revenue generated throughout the year (2022) was Rs 10,202,662,960.19, and the average transaction amount is Rs 20,405.
+1) a.Total Revenue - 10,202,662,960.19
+	 b.Average Transaction Amount - 20,405.32
+	 c.Total Products Sold - 3,747,755
+	 d.Total Sales and Revenue and Quantity by Products
+	 e.Total Customers
 
-b)The top 10 customers have spent more than Rs 69,000 each, with the top customer spending Rs 800,724.49.
+2)a.Top 5 customers by Revenue
+	b.Bottom 5 customers by Revenue
+	c.Top Cities by Revune
+	
+3)a.Revenue by Payment method - roughly same by all methods
+	b.Revenue by StoreType
+	c.Revenue by CustomerAge --- use from part2
+	d.Revenue by CustomerGender
+	e.Revenue by Range of DiscountPercent
 
-c)The bottom 5 customers have spent less than Rs 100, with two customers with negative amounts, this shows that they have possibly been refunded for a return. The most note-worthy point is that such customers were only 2, further analysis can be conducted to investigate the reason for this data, though this is not very alarming from a purely sales point of view. 
+4)a.Top Customers by Total items baught
+	b.City with most transactions and Revenue
+	-- removed b.City with most customers - Hyadrabad
+	c.Total customers in a loyaltyPoint range
+	d.Total Customers by no. of returns
+	e.Customer count by feedback
+	f.Effect of Delivery delays on Feedback
+	g.Effects of Promotions on customers
 
-d)Sales by Region and City - Cities like Kolkata and Ahmedabad generated top revenues, while cities like Mumbai and Hyderabad generated the lowest revenues. This could imply low market penetration in Mumbai and Hyderabad, a potential reason could be tougher competition.
-
-e)Sales by PaymentMethod - there was an almost equal share of each type of payment method, which means no particular method was favored by the customers.
-Sales by StoreType - The customers almost equally favor both in-store and online modes.
-
-f)The top product by revenue is "Laptop", followed by "Sofa" while the lowest revenue-generating product is "Apple"
-
-g)CustomerAge analysis shows that the most revenue-generating age range is "46-60", all genders are almost equal in the share of revenue generated.
-
-h)Analysing the impact of Promotions and Discounts shows that the top percentage range was "30-40" and that Promotion had little to no impact on overall or average TransactionAmount.
-
-i)The top month by revenue was August, and the least was December (though the dataset provided only had data upto the 14th of December).
-
-
+5)a.Sales, Revenue, and Units sold every Month
+	b.Total customers with more than one transaction per month.
+	c.No of Customers with multiple same day transactions
+	d.Rank of each City by Totalsales For each Month
