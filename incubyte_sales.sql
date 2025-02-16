@@ -262,7 +262,7 @@ GROUP BY PaymentMethod
 ORDER BY RevenueByPaymentMethod DESC;
 
 /*
-PaymentMethod	SalesByPaymentMethod
+PaymentMethod	RevenueByPaymentMethod
 Cash			2,556,679,197.41
 Debit Card		2,552,366,143.98
 UPI				2,530,177,440.30
