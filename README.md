@@ -39,7 +39,7 @@ The NULL vales are as follows: TransactionID, TransactionAmount, Quantity, Disco
 -- Although the most sold product by number was 'Apple', but the most Revenue generating product was 'Laptops'
 -- The promotions must be directed towards Laptops, because they generate more revenue for roughly the same number of units sold compared to sofas.
 
-	 e.Total Customers - 48,994
+	e.Total Customers - 48,994
 
 2)a.Top 5 Customers by Revenue
 
