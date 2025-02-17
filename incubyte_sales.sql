@@ -201,7 +201,7 @@ GROUP BY CustomerID
 ORDER BY TotalTransactionAmount DESC
 LIMIT 5;
 
-/* The top 10 customers by total overall sales is as:
+/* The top 5 customers by total overall sales is as:
 CustomerID	TotalTransactionAmount
 32460		800724.49
 39732		773331.78
@@ -210,7 +210,7 @@ CustomerID	TotalTransactionAmount
 9502		763669.57
 */
 
--- 2) b.Bottom 5 customers by Revenue
+-- 2) b.Bottom 5 Customers by Revenue
 SELECT CustomerID, SUM(TransactionAmount) as TotalTransactionAmount
 FROM salesdata
 WHERE CustomerID IS NOT NULL
@@ -358,9 +358,9 @@ From here, it can be deduced that the discount range that earned the most revenu
 */
 
 -- 4) a.Top Customers by Total items baught
-SELECT ROW_NUMBER() OVER (ORDER BY COUNT(Quantity) DESC) AS NUM,
+SELECT ROW_NUMBER() OVER (ORDER BY SUM(Quantity) DESC) AS NUM,
 	CustomerID, 
-	COUNT(Quantity) AS TotalItemsBaught,
+	SUM(Quantity) AS TotalItemsBaught,
     SUM(TransactionAmount) AS TotalRevenue
 FROM salesdata
 WHERE CustomerID IS NOT NULL
@@ -369,11 +369,11 @@ ORDER BY TotalItemsBaught DESC
 LIMIT 5;
 /*
 NUM	CustomerID	TotalItemsBaught	TotalRevenue
-1		35173			24			334919.38
-2		39402			24			558436.27
-3		 3353			23			258066.84
-4		 5617			23			384885.64
-5		24925			22			336947.79
+1	25918		289			185956.79
+2	18666		283			326510.18
+3	14819		271			222440.53
+4	19069		271			308737.23
+5	43722		271			58042.97
 */
 
 -- 4) b.City with most Transactions and Revenue
