@@ -72,7 +72,7 @@ CustomerID	TotalTransactionAmount
 	c.Top Cities by Revune
 
  Cities like Kolkata and Ahmedabad generate the top revenue and the least in cities like Mumbai and Hyadrabad. 
-	
+
 3)a.Revenue by Payment method - roughly the same by all methods
 
 -- All payments bring in roughly the same revenue, and the order of most to least revenue-generating method is Cash, Debit Card, UPI, Credit Card. 
