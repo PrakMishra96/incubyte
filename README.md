@@ -95,8 +95,13 @@ CustomerID	TotalTransactionAmount
 
 -- The discount range that earned the most revenue is 30-40% and the least revenue-generating range is 40-50%
 
-4)a.Top Customers by Total items baught
-	b.City with most transactions and Revenue
+4)a.Top Customers by Total Items bought 
+
+-- top 5 Customers by total items bought have bought 270+ items, whereas the top customer bought 289 items over the year. However, the revenues from these customers ranges from 58,000 to 326,000 this is significantly less than found in 2)a.Top customers by revenue. 
+	
+ b.City with most transactions and Revenue
+
+ -- Top city by total no of transaction is Bangalore but by revenue is Kolkata followed by Ahmedabad and in 3rd place Bangalore. Cities like Pune and Hyderabad are the bottom two.
 	-- removed b.City with most customers - Hyadrabad
 	c.Total customers in a loyaltyPoint range
 	d.Total Customers by no. of returns
