@@ -191,7 +191,8 @@ WHERE CustomerID IS NOT NULL;
 /*
  2) a.Top 5 customers by Revenue
 	b.Bottom 5 customers by Revenue
-	c.Top Cities by Revune
+	c.Total Customers with Spend less Rs 208000
+	d.Top Cities by Revune
 */
 
 -- 2) a.Top 5 customers by Revenue
