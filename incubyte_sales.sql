@@ -184,7 +184,8 @@ Apple		   22,300,717.86	89,970				2,296,713
 
 -- 1) e.Total Customers
 SELECT COUNT(DISTINCT CustomerID) AS TotalCustomers 
-FROM salesdata;
+FROM salesdata
+WHERE CustomerID IS NOT NULL;
 -- 48,994
 
 /*
@@ -348,16 +349,16 @@ From here, it can be deduced that the discount range that earned the most revenu
 */
 
 /*
- 4) a.Top Customers by Total items baught
-	b.City with most Transactions and Revenue
+ 4) a.Top Customers by Total items bought
+	b.City with the most Transactions and Revenue
 	c.Total customers in a loyaltyPoint range
 	d.Total Customers by no. of returns
 	e.Feedback count
-	f.Effect of Delivery delays on Feedback
-	g.Effects of Promotions on customers -- part2
+	f.Effect of Delivery Delays on Feedback
+	g.Effects of Promotions on customers 
 */
 
--- 4) a.Top Customers by Total items baught
+-- 4) a.Top Customers by Total items bought
 SELECT ROW_NUMBER() OVER (ORDER BY SUM(Quantity) DESC) AS NUM,
 	CustomerID, 
 	SUM(Quantity) AS TotalItemsBaught,
@@ -447,7 +448,7 @@ GROUP BY CustomerID
 ORDER BY TotalReturns DESC;
 -- There were more than 35 customers with more than 12 return throughout the year. 
 
--- List of No of custoemrs against no of returns
+-- List of No of customers against no of returns
 WITH Cust_Count_Returns AS
 	(SELECT CustomerID, 
 		SUM(
@@ -495,7 +496,7 @@ FeedbackScore	FeedbackCount
 			5	90114
 			1	89853
 			3	89552
--- There are many customers that have given a feedbackscore of 2, which is alarming and a deep investigation need to be conducted to find the reason.
+-- many customers have given a feedbackscore of 2, which is alarming and a deep investigation needs to be conducted to find the reason.
 */
 
 -- 4) f.Effect of Delivery delays on Feedback
