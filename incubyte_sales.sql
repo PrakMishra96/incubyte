@@ -228,7 +228,17 @@ CustomerID	TotalTransactionAmount
 46086		 67.54
 */
 
--- 2) c.Top Cities by Revune
+-- 2) d.Total Customers with Spend less Rs 208000
+WITH BottomCust AS
+	(SELECT CustomerID, SUM(TransactionAmount) as TotalTransactionAmount
+	FROM salesdata
+	WHERE CustomerID IS NOT NULL
+	GROUP BY CustomerID
+	HAVING TotalTransactionAmount < 208000
+) SELECT COUNT(CustomerID) FROM BottomCust;
+-- 30063
+
+-- 2) d.Top Cities by Revune
 SELECT City, SUM(TransactionAmount) AS RevenueByCity
 FROM salesdata
 GROUP BY City
