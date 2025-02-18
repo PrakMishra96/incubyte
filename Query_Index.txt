@@ -1,0 +1,29 @@
+1) a.Total Revenue,
+	b.Average Transaction Amount 
+	c.Total Products Sold 
+	d.Total Sales and Revenue and Quantity by Products
+	e.Total Customers
+
+2) a.Top 5 customers by Revenue
+	b.Bottom 5 customers by Revenue
+	c.Total Customers with Spend less Rs 208000
+	d.Top Cities by Revenue
+
+3) a.Revenue by Payment method
+	b.Revenue by StoreType
+	c.Revenue by CustomerAge
+	d.Revenue by CustomerGender
+	e.Revenue by Range of DiscountPercent
+
+4) a.Top Customers by Total items bought
+	b.City with the most Transactions and Revenue
+	c.Total customers in a loyaltyPoint range
+	d.Total Customers by no. of returns
+	e.Feedback count
+	f.Effect of Delivery Delays on Feedback
+	g.Effects of Promotions on customers 
+
+5) a.Sales, Revenue, and Units sold every Month
+	b.Total customers with more than one transaction per month.
+	c.No of Customers with multiple same day transactions
+	d.Rank of each City by Totalsales For each Month
