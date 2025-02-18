@@ -344,12 +344,12 @@ SELECT
         WHEN DiscountPercent BETWEEN 40 AND 50 THEN '40-50'
         ELSE '50+'
 	END AS DiscountRange, 
-    SUM(TransactionAmount) AS TotalSalesInRange
+    SUM(TransactionAmount) AS TotalRevInRange
 FROM salesdata
 GROUP BY DiscountRange
 ORDER BY DiscountRange DESC;
 /*
-DiscountRange	TotalSalesInRange
+DiscountRange	TotalRevInRange
 40-50			2,023,000,553.23
 30-40			2,053,653,716.92
 20-30			2,041,329,345.10
