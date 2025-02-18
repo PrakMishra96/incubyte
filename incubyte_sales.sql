@@ -173,7 +173,7 @@ ORDER BY RevenueByProduct DESC;
 -- The promotions needs to be directed towards Laptops, because they generate more revenue for roughly the same no of units sold as compared to sofas.
 
 /*
-ProductName	SalesByProduct		TotalTransactions	TotalProducts
+ProductName	RevenueByProduct		TotalTransactions	TotalProducts
 Laptop		6,231,220,430.24	89,809				   89,809
 Sofa		3,777,022,903.56	89,740				   89,740
 T-Shirt		  102,306,079.47	90,187				  270,545
