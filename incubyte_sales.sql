@@ -474,24 +474,26 @@ WITH Cust_Count_Returns AS
 )SELECT COUNT(CustomerID) AS Total_customers, TotalReturns
 FROM Cust_Count_Returns
 GROUP BY TotalReturns
-ORDER BY TotalReturns DESC;
+ORDER BY Total_Customers DESC;
 /*
 Total_Customers	TotalReturns
-		   9		14
-		  22		13
-		  96		12
-		 231		11
-		 542		10
-		1210		 9
-		2387		 8
-		4237		 7
-		6569		 6
-		8399		 5
-		9247		 4
-		7966		 3
-		5294		 2
-		2279		 1
-		 502		 0
+	9247	4
+	8399	5
+	7966	3
+	6569	6
+	5294	2
+	4237	7
+	2387	8
+	2279	1
+	1210	9
+	542	10
+	502	0
+	231	11
+	96	12
+	22	13
+	9	14
+	3	15
+	1	17
 */
 -- There were 502 customers with no returns in the data provided. Thus it can concluded that the customers are mostly satisfied with their products.
 
