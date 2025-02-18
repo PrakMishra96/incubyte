@@ -36,8 +36,8 @@ The NULL values are as follows: TransactionID, TransactionAmount, Quantity, Disc
 
 	 d.Total Sales and Revenue and Quantity by Products
 
--- Although the most sold product by number was 'Apple', but the most Revenue generating product was 'Laptops'
--- The promotions must be directed towards Laptops, because they generate more revenue for roughly the same number of units sold compared to sofas.
+-- Although the most sold product by number was 'Apple', the most Revenue generating product was 'Laptop' and 'Sofa'
+-- The promotions must be directed towards laptops because they generate more revenue for roughly the same number of units sold as sofas.
 
 	e.Total Customers - 48,994
 
@@ -69,7 +69,11 @@ CustomerID	TotalTransactionAmount
 
 46086		| 67.54
 
-	c.Top Cities by Revune
+	c.Total Customers with Spend less Rs 208000
+
+ -- Total of 30063 customers spent less than Rs 208,000
+ 
+ 	d.Top Cities by Revune
 
  Cities like Kolkata and Ahmedabad generate the top revenue and the least in cities like Mumbai and Hyadrabad. 
 
